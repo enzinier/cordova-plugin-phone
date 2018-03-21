@@ -22,7 +22,7 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-phone"
-    version="1.0.0">
+    version="2.0.0">
     <name>Phone</name>
     <description>Cordova Plugin Phone</description>
     <license>MIT</license>
