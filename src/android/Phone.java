@@ -11,6 +11,7 @@ import org.json.JSONObject;
 
 import android.content.pm.PackageManager;
 import android.content.Context;
+import android.telephony.PhoneNumberUtils;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -117,6 +118,7 @@ class CallStateListener extends PhoneStateListener {
 
     JSONObject result = new JSONObject();
     try {
+      result.put("formattedIncomingNumber", PhoneNumberUtils.formatNumber(incomingNumber));
       result.put("incomingNumber", incomingNumber);
       switch (state) {
       case TelephonyManager.CALL_STATE_IDLE:
